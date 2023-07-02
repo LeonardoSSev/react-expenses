@@ -1,3 +1,6 @@
+import './ExpenseList.css'
+
+import Card from '../../Card/Card';
 import ExpenseItem from '../ExpenseItem/ExpenseItem';
 
 export default function ExpenseList() {
@@ -26,11 +29,11 @@ export default function ExpenseList() {
 
 
     return (
-        <section>
+        <Card className="expense-list">
             <ExpenseItem className="expense-list" expense={expenses[0]} />
             <ExpenseItem className="expense-list" expense={expenses[1]} />
             <ExpenseItem className="expense-list" expense={expenses[2]} />
             <ExpenseItem className="expense-list" expense={expenses[3]} />
-        </section>
+        </Card>
     );
 }
